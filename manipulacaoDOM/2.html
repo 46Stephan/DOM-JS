@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTADOR DE CLIQUES</title>
+  </head>
+  <body>
+    <div>
+        <h1>Contador de Cliques</h1>
+        <button id="incrementar">ADICIONAR</button>
+        <button id="zerar">ZERAR</button>
+        <p id="contador">O contador está com 0 cliques</p>
+        </body>
+    </div>
+
+    <script>
+let contador = 0;
+
+document.getElementById("incrementar").onclick = function() {
+  contador++;
+  document.getElementById("contador").innerHTML = "O contador está com " + contador + " cliques";
+};
+
+document.getElementById("zerar").onclick = function() {
+  contador = 0;
+  document.getElementById("contador").innerHTML = "O contador está com 0 cliques";
+};
+    </script>
+  </body>
+</html>

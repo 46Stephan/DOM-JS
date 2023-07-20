@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEXTO</title>
+  </head>
+  <body>
+    <button onclick="clicar()">CLIQUE AQUI PARA MUDAR O TEXTO</button>
+    <p id="texto">AQUI IRA APARECER ALGO (...)</p>
+
+    <script>
+      function clicar() {
+        let nome = prompt("Informe o seu nome:", "Digite aqui");
+        document.getElementById(
+          "texto"
+        ).innerHTML = `Salve ${nome}, vc está deixando o seu site dinâmico!`;
+      }
+    </script>
+  </body>
+</html>
